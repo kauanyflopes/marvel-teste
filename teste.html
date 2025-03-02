@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Fan Page</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/marvel-logo.png" alt="Marvel Logo" class="logo">
+        <h1>Marvel Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Heróis</a></li>
+                <li><a href="#">Vilões</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-container">
+            <div class="slide">
+                <img src="img/wanda.jpg" alt="Slide 1">
+                <div class="caption">
+                    <h2>HQ da Marvel pode ter revelado o paradeiro da Wanda no MCU</h2>
+                    <p>Feiticeira anda sumida desde Doutor Estranho no Multiverso da Loucura</p>
+                    <a href="https://www.jovemnerd.com.br/noticias/hqs-e-livros/marvel-hq-revela-onde-esta-wanda" class="btn" target="_blank">Ler Mais</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/guerra.jpg" alt="Slide 2">
+                <div class="caption">
+                    <h2>Nova fase do MCU promete grandes reviravoltas</h2>
+                    <p>Os Vingadores podem enfrentar sua maior ameaça</p>
+                    <a href="https://www.omelete.com.br/vingadores/guerras-secretas-produtor-filme-reboot-mcu" class="btn" target="_blank">Ler Mais</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/spider.jpg" alt="Slide 3">
+                <div class="caption">
+                    <h2>Demolidor vai enfrentar o Homem-Aranha?</h2>
+                    <p>O que foi descoberto</p>
+                    <a href="https://terrabrasilnoticias.com/2025/03/demolidor-vai-enfrentar-o-homem-aranha-o-que-foi-descoberto/#google_vignette" class="btn" target="_blank">Ler Mais</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/robert.webp" alt="Slide 4">
+                <div class="caption">
+                    <h2>Robert Downey Jr. poderia voltar como Doutor Destino?</h2>
+                    <p>Rumores indicam possível retorno do ator</p>
+                    <a href="https://www.omelete.com.br/vingadores/doomsday-robert-downey-jr-doutor-destino-imagens" class="btn" target="_blank">Ler Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <section class="comic-strip">
+        <h2>Quadrinhos Marvel</h2>
+        <div class="comic-container">
+            <img src="img/iron.jpg" alt="Quadrinho 1">
+            <img src="img/cp.jpg" alt="Quadrinho 2">
+            <img src="img/hulk.jpg" alt="Quadrinho 3">
+            <img src="img/spid.jpg" alt="Quadrinho 4">
+            <img src="img/wars.jpg" alt="Quadrinho 5">
+            <img src="img/aven.jpg" alt="Quadrinho 6">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/marvel-logo.png" alt="Marvel Logo">
+            </div>
+            
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Heróis</a></li>
+                    <li><a href="#">Vilões</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="img/face.jpg" alt="Facebook"></a>
+                <a href="#"><img src="img/tw.png" alt="Twitter"></a>
+                <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Marvel Fan Page - Todos os direitos reservados.</p>
+        <p class="copyright">Desenvolvido Por Kauany Lopes</p>
+    </footer>
+</body>
+</html>
