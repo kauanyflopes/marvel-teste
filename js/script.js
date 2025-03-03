@@ -57,6 +57,9 @@ setInterval(nextSlide, 5000);
 document.addEventListener("DOMContentLoaded", function() {
     const contactLink = document.getElementById("contact-link");
 
+   document.addEventListener("DOMContentLoaded", function() {
+    const contactLink = document.getElementById("contact-link");
+
     if (contactLink) {
         contactLink.addEventListener("click", function(event) {
             event.preventDefault(); // Impede o comportamento padrão do link
