@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (contactLink) {
         contactLink.addEventListener("click", function(event) {
             event.preventDefault(); // Impede o comportamento padrão do link
-            window.location.href = "contact.html"; // Redireciona para a página de contato
+            window.location.href = "contato.html"; // Redireciona para a página de contato
         });
     }
 });
