@@ -1,15 +1,82 @@
-<section class="contact-form">
-    <h2>Entre em Contato</h2>
-    <form action="#" method="POST">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Fan Page</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/marvel-logo.png" alt="Marvel Logo" class="logo">
+        <h1>Marvel Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="teste.html">Início</a></li>
+                <li><a href="#">Heróis</a></li>
+                <li><a href="#">Vilões</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#" id="contato-btn">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    <section class="contact-form" id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
-        <button type="submit" class="btn">Enviar</button>
-    </form>
-</section>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/marvel-logo.png" alt="Marvel Logo">
+            </div>
+            
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="teste.html">Início</a></li>
+                    <li><a href="#">Heróis</a></li>
+                    <li><a href="#">Vilões</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#" id="contato-btn">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="img/face.jpg" alt="Facebook"></a>
+                <a href="#"><img src="img/tw.png" alt="Twitter"></a>
+                <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Marvel Fan Page - Todos os direitos reservados.</p>
+        <p class="copyright">Desenvolvido Por Kauany Lopes</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const contatoBtn = document.getElementById('contato-btn');
+            const contatoSection = document.getElementById('contato');
+    
+            if (contatoBtn && contatoSection) {
+                contatoBtn.addEventListener('click', function (event) {
+                    event.preventDefault(); // Impede o comportamento padrão
+                    contatoSection.scrollIntoView({ behavior: 'smooth' }); // Rola suavemente até a seção
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
